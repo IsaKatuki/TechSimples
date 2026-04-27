@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSimples - Contato</title>
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <div class="bg-dark text-light text-center p-4 shadow">
+        <h1 class="fw-bold mb-1">TechSimples</h1>
+        <p class="mb-0">Aprendendo tecnologia de forma prática</p>
+    </div>
+
+    <!--MENU-->
+    <div class="bg-dark text-center pt-2 pb-4">
+        <a href="index.html" class="btn btn-primary mx-1 px-4 rounded-pill">Home</a>
+        <a href="sobre.html" class="btn btn-primary mx-1 px-4 rounded-pill">Sobre</a>
+        <a href="produtos.html" class="btn btn-primary mx-1 px-4 rounded-pill">Produtos</a>
+        <a href="contato.html" class="btn btn-primary mx-1 px-4 rounded-pill">Contato</a>
+    </div>
+
+    <!--CONTEÚDO-->
+    <div class="container col-4 mt-4">
+        <h2 class="text-center">Entre em contato conosco</h2>
+        <p class="col-12 text-muted text-center">Entre em contato satravés de nosso email techsimples@tech.com
+            ou pelo formulário abaixo.
+        </p>
+        <hr>
+        <form class="row">
+            <div class="col-12 mt-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" placeholder="Digite seu nome" required>
+            </div>
+            <div class="col-12 mt-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Digite seu email" required>
+                <small class="form-text text-muted">Nunca compartilharemos seu email.</small>
+            </div>
+            <div class="col-12 mt-3">
+                <label class="form-label">Assunto</label>
+                <select class="form-select">
+                    <option value="0">Selecione um assunto</option>
+                    <option value="1">Dúvida sobre os cursos</option>
+                    <option value="2">Pagamentos e Reembolsos</option>
+                    <option value="3">Problemas de acesso</option>
+                    <option value="4">Suporte técnico</option>
+                    <option value="5">Certificados</option>
+                    <option value="6">Instrutores e Parceiros</option>
+                    <option value="7">Outro assunto</option>
+                </select>
+                <textarea name="texto" class="form-control mt-3" cols="10" rows="3" placeholder="Mensagem"
+                    required></textarea>
+            </div>
+            <div class="col-12 m-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="privacidade" required>
+                    <label class="form-check-label">Li e aceito os Termos de Uso e a Política de Privacidade.</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="email">
+                    <label class="form-check-label">Quero receber novidades, promoções e conteúdos por e-mail.</label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary mt-2 mb-4" data-bs-toggle="modal"
+                data-bs-target="#modalSucesso">Enviar</button>
+            <div class="modal fade" id="modalSucesso" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Mensagem enviada</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!--FOOTER-->
+    <div class="bg-dark text-light text-center p-1 pt-4">
+        <p>2026 - TechSimples</p>
+    </div>
+</body>
+
+</html>
