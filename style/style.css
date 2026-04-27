@@ -1,0 +1,28 @@
+.logo-size{
+    width: 940;
+    height: 250;
+}
+
+.carousel-caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
